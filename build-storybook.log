@@ -1,0 +1,66 @@
+info @storybook/react v6.1.21
+info 
+info => Cleaning outputDir C:\\Users\\emo\\AppData\\Local\\Temp\\chromatic--22308-jT6zMaq98i4S
+info => Copying static files from: public
+info => Building manager..
+info => Loading manager config..
+info => Loading presets
+info => Compiling manager..
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-methods.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+info => Manager built (17 s)
+info => Building preview..
+info => Loading preview config..
+info => Loading presets
+info => Loading 1 config file in "./.storybook"
+info => Loading 2 other files in "./.storybook"
+info => Adding stories defined in ".storybook\main.js"
+info => Loading Webpack configuration from `node_modules\react-scripts\bin\react-scripts.js"`
+info => Removing existing JavaScript and TypeScript rules.
+ERR! Error: Cannot find module 'C:\Users\emo\tmp\storybook-chromatic\node_modules\react-scripts\bin\react-scripts.js"\config\webpack.config'
+ERR! Require stack:
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\preset-create-react-app\index.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\presets.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\config.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\build-static.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\server.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\react\dist\server\build.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\react\bin\build.js
+ERR!     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+ERR!     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+ERR!     at Module.require (node:internal/modules/cjs/loader:1005:19)
+ERR!     at require (node:internal/modules/cjs/helpers:102:18)
+ERR!     at Object.webpack (C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\preset-create-react-app\index.js:56:28)
+ERR!     at C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\presets.js:259:28
+ERR!     at async buildPreview (C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\build-static.js:225:23)
+ERR!     at async buildStaticStandalone (C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\build-static.js:276:5)
+ERR!  Error: Cannot find module 'C:\Users\emo\tmp\storybook-chromatic\node_modules\react-scripts\bin\react-scripts.js"\config\webpack.config'
+ERR! Require stack:
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\preset-create-react-app\index.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\presets.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\config.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\build-static.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\server.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\react\dist\server\build.js
+ERR! - C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\react\bin\build.js
+ERR!     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+ERR!     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+ERR!     at Module.require (node:internal/modules/cjs/loader:1005:19)
+ERR!     at require (node:internal/modules/cjs/helpers:102:18)
+ERR!     at Object.webpack (C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\preset-create-react-app\index.js:56:28)
+ERR!     at C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\presets.js:259:28
+ERR!     at async buildPreview (C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\build-static.js:225:23)
+ERR!     at async buildStaticStandalone (C:\Users\emo\tmp\storybook-chromatic\node_modules\@storybook\core\dist\server\build-static.js:276:5) {
+ERR!   code: 'MODULE_NOT_FOUND',
+ERR!   requireStack: [
+ERR!     'C:\\Users\\emo\\tmp\\storybook-chromatic\\node_modules\\@storybook\\preset-create-react-app\\index.js',
+ERR!     'C:\\Users\\emo\\tmp\\storybook-chromatic\\node_modules\\@storybook\\core\\dist\\server\\presets.js',
+ERR!     'C:\\Users\\emo\\tmp\\storybook-chromatic\\node_modules\\@storybook\\core\\dist\\server\\config.js',
+ERR!     'C:\\Users\\emo\\tmp\\storybook-chromatic\\node_modules\\@storybook\\core\\dist\\server\\build-static.js',
+ERR!     'C:\\Users\\emo\\tmp\\storybook-chromatic\\node_modules\\@storybook\\core\\server.js',
+ERR!     'C:\\Users\\emo\\tmp\\storybook-chromatic\\node_modules\\@storybook\\react\\dist\\server\\build.js',
+ERR!     'C:\\Users\\emo\\tmp\\storybook-chromatic\\node_modules\\@storybook\\react\\bin\\build.js'
+ERR!   ]
+ERR! }
